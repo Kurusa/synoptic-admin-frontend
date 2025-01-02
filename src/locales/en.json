@@ -2,9 +2,8 @@
   "dashboard": {
     "completedTasks": "Completed Tasks",
     "dailySales": "Daily Sales",
-    "performance": "Performance",
+    "count": "К-сть",
     "simpleTable": "Simple Table",
-    "totalShipments": "Total Shipments",
     "chartCategories": ["Accounts", "Purchases", "Sessions"],
     "tasks": "Tasks({count})",
     "today": "Today",
@@ -102,15 +101,11 @@
     ]
   },
   "sidebar": {
-    "title": "Creative Tim",
     "shortTitle": "CT",
     "dashboard": "dashboard",
-    "icons": "Icons",
     "maps": "Maps",
     "notifications": "Notifications",
     "userProfile": "User Profile",
-    "tableList": "Table List",
-    "typography": "Typography",
-    "rtlSupport": "RTL Support"
+    "tableList": "Table List"
   }
 }

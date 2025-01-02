@@ -73,6 +73,24 @@ export default {
         allData: [],
         chartData: {
           datasets: [{}],
+          labels: [
+            "JAN",
+            "FEB",
+            "MAR",
+            "APR",
+            "MAY",
+            "JAN",
+            "FEB",
+            "MAR",
+            "APR",
+            "MAY",
+            "JAN",
+            "FEB",
+            "MAR",
+            "APR",
+            "MAY",
+            "MAY",
+          ],
         },
         extraOptions: chartConfigs.purpleChartOptions,
         gradientColors: config.colors.primaryGradient,
@@ -115,7 +133,7 @@ export default {
             data: this.bigLineChart.allData,
           },
         ],
-        labels: this.bigLineChart.chartData.labels,
+        //labels: this.bigLineChart.chartData.labels,
       };
       this.$refs.bigChart.updateGradients(chartData);
       this.bigLineChart.chartData = chartData;
