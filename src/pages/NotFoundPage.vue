@@ -46,24 +46,6 @@
         </div>
       </div>
     </div>
-    <footer class="footer-demo">
-      <div class="container">
-        <nav class="pull-left">
-          <ul>
-            <li>
-              <router-link :to="{ path: '/' }">Home</router-link>
-            </li>
-            <li>
-              <router-link :to="{ path: '/register' }">Register</router-link>
-            </li>
-          </ul>
-        </nav>
-        <div class="copyright pull-right">
-          &copy; 2018, made with
-          <i class="fa fa-heart heart"></i> by Black admin
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
