@@ -9,6 +9,7 @@ export const fetchUsersStats = async () => {
         labels: response.data.labels,
         data: response.data.values,
         total: response.data.total,
+        today: response.data.values.slice(-1),
     };
 };
 
@@ -18,5 +19,6 @@ export const fetchMessagesStats = async () => {
         labels: response.data.labels,
         data: response.data.values,
         total: response.data.total,
+        today: response.data.values.slice(-1),
     };
 };

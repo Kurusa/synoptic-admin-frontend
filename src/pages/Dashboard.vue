@@ -6,8 +6,9 @@
           <template slot="header">
             <div class="row">
               <div class="col-sm-6" :class="'text-left'">
-                <h2 class="card-title">
+                <h2 class="card-title d-flex align-items-center">
                   {{ $t("dashboard.count") }}: {{ totalCount }}
+                  <span class="badge badge-info ml-2">+{{ todayCount }} {{ $t("dashboard.new") }}</span>
                 </h2>
               </div>
               <div class="col-sm-6">
@@ -58,7 +59,7 @@
 import LineChart from "@/components/Charts/LineChart";
 import * as chartConfigs from "@/components/Charts/config";
 import config from "@/config";
-import { fetchUsersStats, fetchMessagesStats } from "@/api/dashboard";
+import {fetchMessagesStats, fetchUsersStats} from "@/api/dashboard";
 
 export default {
   components: {
@@ -69,6 +70,7 @@ export default {
       activeTab: 0,
       tabs: ["Users", "Messages"],
       totalCount: 0,
+      todayCount: 0,
       bigLineChart: {
         allData: [],
         chartData: {
@@ -94,6 +96,7 @@ export default {
       this.bigLineChart.allData = stats.data;
       this.bigLineChart.chartData.labels = stats.labels;
       this.totalCount = stats.total;
+      this.todayCount = stats.today;
       this.initBigChart();
     },
     initBigChart() {

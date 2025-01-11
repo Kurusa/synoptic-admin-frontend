@@ -3,6 +3,7 @@
     "completedTasks": "Completed Tasks",
     "dailySales": "Daily Sales",
     "count": "К-сть",
+    "new": "Нових",
     "simpleTable": "Simple Table",
     "chartCategories": ["Accounts", "Purchases", "Sessions"],
     "tasks": "Tasks({count})",
