@@ -22,3 +22,15 @@ export const fetchMessagesStats = async () => {
         today: response.data.values.slice(-1),
     };
 };
+
+export const fetchCitiesStats = async () => {
+    const response = await axios.get(`${BASE_URL}/stats/cities`);
+
+    return response.data.map(city => ({
+        id: city.id,
+        name: city.name,
+        lat: city.lat,
+        lon: city.lon,
+        userCount: city.user_count,
+    }));
+};
